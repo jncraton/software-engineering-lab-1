@@ -1,0 +1,72 @@
+* {
+  margin:0;
+  padding:0;
+}
+
+body {
+  font-family: "Gotham SSm A", "Gotham SSm B", sans-serif;
+  background-image: url(https://www.anderson.edu/wp-content/uploads/aerial2-C.jpg);
+}
+
+a {
+  color:inherit;
+}
+
+article {
+  padding: 0 20px;
+  background:rgba(200,200,200,0.8);
+}
+
+section, article {
+  max-width:720px; 
+  margin:0 auto;
+  height:100%;
+}
+
+canvas {
+  margin: 10px auto;
+  background:rgba(225,225,225,0.8);
+  width:100%;
+}
+
+h1,#score {
+  float:left;
+  margin: 10px 0;
+}
+
+#score {
+  float:right;
+}
+
+nav a {
+  display: inline-block;
+  padding:1.2em 20px 0.8em;
+  background: #f57920;
+  box-shadow: 0 5px 2px #d56a2a inset;
+  text-transform: uppercase;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size:12px;
+}
+
+#logo {
+  max-height: 50%;
+  float:left;
+}
+
+header {
+  background:rgba(51,51,51,0.6);
+  height: 140px;
+  border-bottom: 1px solid #f57920;
+}
+
+nav {
+  background-color:#000;
+  text-align: right;
+}
+
+footer {
+  text-align:center;
+  padding:28px;
+}
