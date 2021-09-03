@@ -11,11 +11,13 @@ const brickHeight = 20
 const brickPadding = 10
 const brickOffsetTop = 30
 const brickOffsetLeft = 20
-const color = '#f57920'
+const color = 'blue'
 let ravensHarmed = 0
 let ravensFreed = 0
 let paused = true
 const bricks = []
+
+
 
 function loadImage (src) {
   const img = new window.Image()
