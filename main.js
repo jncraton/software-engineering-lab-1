@@ -76,7 +76,7 @@ document.addEventListener('mousemove', movePaddle, false)
 document.addEventListener('touchmove', movePaddle, false)
 
 function drawRaven () {
-  ctx.drawImage(ravenRight, x - 38, y - 12)
+  ctx.drawImage(ravenRight, x - 38, y - 30)
 }
 
 function drawPaddle () {
