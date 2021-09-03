@@ -23,7 +23,7 @@ function loadImage (src) {
   return img
 }
 
-const ravenRight = loadImage('media/koontz-240x227.jpg')
+const ravenRight = loadImage('media/koontzSmall.jpg')
 
 function togglePause () {
   paused = !paused
