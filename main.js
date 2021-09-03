@@ -106,7 +106,7 @@ function drawBricks () {
 }
 
 function drawScore () {
-  document.querySelector('#score').textContent = 'Ravens Freed: ' + ravensFreed + ' Ravens Harmed: ' + ravensHarmed
+  document.querySelector('#score').textContent = 'Koontz(s) Freed: ' + ravensFreed + ' Koontz(s) Harmed: ' + ravensHarmed
 }
 
 function collisionDetection () {
