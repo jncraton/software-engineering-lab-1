@@ -5,3 +5,4 @@
 - Gage Jones
 - Reece Jones
 - Justin Schy
+- Triston Hart
