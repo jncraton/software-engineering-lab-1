@@ -6,3 +6,4 @@
 - Reece Jones
 - Justin Schy
 - Triston Hart
+- Jacob Ranahan
