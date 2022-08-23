@@ -17,16 +17,18 @@ You now have a local copy of this Git repository. This includes not just the cur
 
 You have now added a new change to your local history of changes in your local repository. You can confirm this by running `git log`. You can also view your change by running `git diff HEAD~1` to show the difference between the head of the current branch and the previous commit.
 
-- Push it to the main branch on Github.
+- `push` it to the `main` branch on Github.
 
 Note that when working collaboratively nearly all teams will avoid using the `main` branch in this way. We will use branches and pull requests in our next lab.
+
+If you run into merge conflicts, feel free to attempt to resolve them. If you get stuck, we can talk more about how to get unstuck in class.
 
 - Observe that the file is now updated on Github.
 - Open index.html locally and explore the game.
 - Make one visible change to the game. This doesn't have to be a major change, but it can be.
-- Commit your change. You may use multiple commits and/or branches if desired, but a single commit is fine for this project.
+- `commit` your change. You may use multiple commits and/or branches if desired, but a single commit is fine for this project.
 - Test your change locally. We do not want to push a broken game to others.
-- Push your working change to Github. If you run into merge conflicts, feel free to attempt to resolve them. If you get stuck, we can talk more about how to get unstuck in class.
+- `push` your working change to Github.
 - Observe that your change is reflected in the [deployed version of the game](https://software-engineering-lab-1.netlify.app/) after a minute or so.
 
 If Git is a little rusty for you, I recommend using the [Git book](https://git-scm.com/book/en/v2) for reference.
