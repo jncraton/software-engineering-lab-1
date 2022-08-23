@@ -4,7 +4,7 @@ Software Engineering Lab 1
 Tasks
 -----
 
-- Clone this repository.
+- `clone` this repository.
 
 ```
 git clone git@github.com:jncraton/software-engineering-lab-1.git
