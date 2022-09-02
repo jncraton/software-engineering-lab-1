@@ -131,41 +131,36 @@ function collisionDetection() {
     }
 }
 
-function draw() {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    collisionDetection();
+function draw () {
+  ctx.clearRect(0, 0, canvas.width, canvas.height)
+  collisionDetection()
 
-    if (x + dx > canvas.width - ravenHitbox || x + dx < ravenHitbox) {
-        dx = -dx;
-    }
+  if (x + dx > canvas.width - ravenHitbox || x + dx < ravenHitbox) {
+    dx = -dx
+  }
 
-    if (y < -100) {
-        ravensFreed++;
-        restart();
-    } else if (y > canvas.height + 64) {
-        ravensHarmed++;
-        restart();
-    } else if (
-        y > canvas.height - ravenHitbox &&
-        y < canvas.height + ravenHitbox &&
-        x > paddleX &&
-        x < paddleX + paddleWidth &&
-        dy > 0
-    ) {
-        dy = -dy;
-    }
+  if (y < -100) {
+    ravensFreed++
+    restart()
+  } else if (y > canvas.height + 64) {
+    ravensHarmed++
+    restart()
+  } else if (y > (canvas.height - 15) - ravenHitbox && y < canvas.height + ravenHitbox &&
+            x > paddleX && x < paddleX + paddleWidth && dy > 0) {
+    dy = -dy
+  }
 
-    x += dx;
-    y += dy;
+  x += dx
+  y += dy
 
-    drawBricks();
-    drawRaven();
-    drawPaddle();
-    drawScore();
+  drawBricks()
+  drawRaven()
+  drawPaddle()
+  drawScore()
 
-    if (!paused) {
-        window.requestAnimationFrame(draw);
-    }
+  if (!paused) {
+    window.requestAnimationFrame(draw)
+  }
 }
 
 restart();
