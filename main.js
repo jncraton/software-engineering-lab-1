@@ -23,12 +23,7 @@ function loadImage(src) {
     return img;
 }
 
-<<<<<<< HEAD
 const ravenRight = loadImage("media/SARS-CoV-2.png");
-=======
-const ravenRight = loadImage("media/raven-right.png");
-const pjp = loadImage("media/pjp.png");
->>>>>>> 27ce71eb4012b01eafba7adb6364dd9f5231f257
 
 function togglePause() {
     paused = !paused;
