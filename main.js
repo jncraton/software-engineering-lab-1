@@ -100,13 +100,9 @@ function drawBricks() {
                 bricks[c][r].x = brickX;
                 bricks[c][r].y = brickY;
                 ctx.beginPath();
-<<<<<<< HEAD
                 ctx.rect(brickX, brickY, brickWidth, brickHeight);
                 ctx.fillStyle = color;
                 ctx.fill();
-=======
-                ctx.drawImage(pjp, brickX, brickY, brickWidth, brickHeight);
->>>>>>> 27ce71eb4012b01eafba7adb6364dd9f5231f257
                 ctx.closePath();
             }
         }
