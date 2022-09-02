@@ -140,7 +140,7 @@ function draw() {
         ravensHarmed++;
         restart();
     } else if (
-        y > canvas.height - 15 - ravenHitbox &&
+        y > canvas.height - 40 - ravenHitbox &&
         y < canvas.height + ravenHitbox &&
         x > paddleX &&
         x < paddleX + paddleWidth &&
