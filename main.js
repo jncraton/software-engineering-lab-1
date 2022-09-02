@@ -2,7 +2,6 @@ let x, y, dx, dy, paddleX;
 const canvas = document.getElementById("myCanvas");
 const ctx = canvas.getContext("2d");
 const ravenHitbox = 12;
-git;
 const paddleHeight = 10;
 const paddleWidth = 75;
 const brickRowCount = 8;
@@ -25,7 +24,7 @@ function loadImage(src) {
 }
 
 const ravenRight = loadImage("media/SARS-CoV-2.png");
-const pjp = loadImage("media/pjp.png");
+const pjp = loadImage("media/PJP.png");
 
 function togglePause() {
     paused = !paused;
