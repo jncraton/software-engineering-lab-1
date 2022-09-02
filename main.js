@@ -23,7 +23,12 @@ function loadImage(src) {
     return img;
 }
 
+<<<<<<< HEAD
 const ravenRight = loadImage("media/SARS-CoV-2.png");
+=======
+const ravenRight = loadImage("media/raven-right.png");
+const pjp = loadImage("media/pjp.png");
+>>>>>>> 27ce71eb4012b01eafba7adb6364dd9f5231f257
 
 function togglePause() {
     paused = !paused;
@@ -100,9 +105,13 @@ function drawBricks() {
                 bricks[c][r].x = brickX;
                 bricks[c][r].y = brickY;
                 ctx.beginPath();
+<<<<<<< HEAD
                 ctx.rect(brickX, brickY, brickWidth, brickHeight);
                 ctx.fillStyle = color;
                 ctx.fill();
+=======
+                ctx.drawImage(pjp, brickX, brickY, brickWidth, brickHeight);
+>>>>>>> 27ce71eb4012b01eafba7adb6364dd9f5231f257
                 ctx.closePath();
             }
         }
