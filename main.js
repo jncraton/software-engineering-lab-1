@@ -137,7 +137,7 @@ function draw () {
   } else if (y > canvas.height + 64) {
     ravensHarmed++
     restart()
-  } else if (y > canvas.height - ravenHitbox && y < canvas.height + ravenHitbox &&
+  } else if (y > (canvas.height - 15) - ravenHitbox && y < canvas.height + ravenHitbox &&
             x > paddleX && x < paddleX + paddleWidth && dy > 0) {
     dy = -dy
   }
