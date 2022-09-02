@@ -25,6 +25,7 @@ function loadImage(src) {
 
 const ravenRight = loadImage("media/SARS-CoV-2.png");
 const pjp = loadImage("media/PJP.png");
+const syringe = loadImage("media/Syringe.jpg");
 
 function togglePause() {
     paused = !paused;
@@ -87,8 +88,7 @@ function drawRaven() {
 function drawPaddle() {
     ctx.beginPath();
     ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
-    ctx.fillStyle = color;
-    ctx.fill();
+    ctx.Image("media/Syringe.jpg");
     ctx.closePath();
 }
 
