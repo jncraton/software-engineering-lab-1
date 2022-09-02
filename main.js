@@ -102,7 +102,7 @@ function drawBricks() {
                 bricks[c][r].x = brickX;
                 bricks[c][r].y = brickY;
                 ctx.beginPath();
-                ctx.drawImage(pjp, brickX, brickY, brickWidth, brickHeight);
+                ctx.drawImage(syringe, brickX, brickY, brickWidth, brickHeight);
                 ctx.closePath();
             }
         }
