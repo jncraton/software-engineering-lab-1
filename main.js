@@ -88,7 +88,8 @@ function drawRaven() {
 function drawPaddle() {
     ctx.beginPath();
     ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
-    ctx.Image("media/Syringe.jpg");
+    ctx.fillStyle = color;
+    ctx.fill();
     ctx.closePath();
 }
 
