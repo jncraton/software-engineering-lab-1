@@ -1,1 +1,4 @@
-Jon Craton
+Contributors
+============
+
+- Jon Craton
