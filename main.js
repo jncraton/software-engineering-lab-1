@@ -14,6 +14,7 @@ const brickOffsetLeft = 20
 const color = '#f57920'
 let ravensHarmed = 0
 let ravensFreed = 0
+let ravenScore = 0
 let paused = true
 const bricks = []
 
