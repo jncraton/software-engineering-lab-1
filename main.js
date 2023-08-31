@@ -26,9 +26,8 @@ function loadImage(src) {
     return img;
 }
 
-const chuckyKoontz = loadImage('/media\/.jpeg')
-const ravenLeft = loadImage('media/pjp2_19.jpg')
-
+const chuckyKoontz = loadImage('media/chuck.jpeg')
+const pjp = loadImage('media/pjp2_19.jpg')
 
 function togglePause() {
     paused = !paused;
@@ -90,7 +89,7 @@ document.addEventListener("touchmove", movePaddle, false);
 
 
 function drawRaven () {
-  let image = dx >= 0 ? chuckyKoontz : ravenLeft;
+  let image = dx >= 0 ? chuckyKoontz : pjp;
   ctx.drawImage(image, x - 38, y - 12)
 }
 
