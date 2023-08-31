@@ -41,7 +41,7 @@ document.querySelector('#step').addEventListener('click', () => {
 })
 
 function restart () {
-  const difficulty = document.querySelector('input[name=difficulty]').value
+  const difficulty = Math.max(1, document.querySelector('input[name=difficulty]').value);
 
   x = canvas.width / 2
   y = canvas.height - 30
