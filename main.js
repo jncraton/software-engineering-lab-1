@@ -12,6 +12,7 @@ const brickPadding = 10
 const brickOffsetTop = 30
 const brickOffsetLeft = 20
 const color = '#f57920'
+let firstGame = true
 let ravensHarmed = 0
 let ravensFreed = 0
 let ravenScore = 0
@@ -34,6 +35,10 @@ function togglePause() {
     document.querySelector("#pause").innerHTML = paused ? "Resume" : "Pause";
     document.querySelector("#step").style.display = paused ? "inline" : "none";
     draw();
+    if (firstGame) {
+      firstGame = false
+      document.getElementById("musicPlayer").play();
+    }
 }
 document.querySelector("#pause").addEventListener("click", togglePause);
 
