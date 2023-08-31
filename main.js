@@ -25,7 +25,7 @@ function loadImage(src) {
 }
 
 const ravenRight = loadImage('media/raven-right.png')
-const ravenLeft = loadImage('media/pjp2_19.png')
+const ravenLeft = loadImage('media/pjp2_19.jpg')
 
 function togglePause() {
     paused = !paused;
