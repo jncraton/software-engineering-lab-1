@@ -6,7 +6,7 @@ const paddleHeight = 10
 const paddleWidth = 75
 const brickRowCount = 8
 const brickColumnCount = 6
-const brickWidth = 5
+const brickWidth = 46
 const brickHeight = 20
 const brickPadding = 10
 const brickOffsetTop = 30
@@ -172,4 +172,3 @@ function draw() {
 }
 
 restart()
-togglePause()
