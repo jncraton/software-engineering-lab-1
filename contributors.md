@@ -7,4 +7,5 @@ Contributors
 - Josh Westrum
 - Mason Wallace
 - Marcus Shaffer
+- Nate Martin
 - Kedric Nees
