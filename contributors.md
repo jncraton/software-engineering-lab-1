@@ -6,3 +6,4 @@ Contributors
 - Skylar Smith
 - Mason Wallace
 - Marcus Shaffer
+- Kedric Nees
