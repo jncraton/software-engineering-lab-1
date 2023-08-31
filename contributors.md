@@ -8,3 +8,4 @@ Contributors
 - Mason Wallace
 - Marcus Shaffer
 - Nate Martin
+- Kedric Nees
