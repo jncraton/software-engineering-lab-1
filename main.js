@@ -12,6 +12,7 @@ const brickPadding = 10
 const brickOffsetTop = 30
 const brickOffsetLeft = 20
 const color = '#f57920'
+let firstGame = true
 let ravensHarmed = 0
 let ravensFreed = 0
 let ravenScore = 0
@@ -25,14 +26,18 @@ function loadImage(src) {
     return img;
 }
 
-const ravenRight = loadImage('media/raven-right.png')
-const ravenLeft = loadImage('media/pjp2_19.jpg')
+const chuckyKoontz = loadImage('media/chuck.jpeg')
+const pjp = loadImage('media/pjp2_19.jpg')
 
 function togglePause() {
     paused = !paused;
     document.querySelector("#pause").innerHTML = paused ? "Resume" : "Pause";
     document.querySelector("#step").style.display = paused ? "inline" : "none";
     draw();
+    if (firstGame) {
+      firstGame = false
+      document.getElementById("musicPlayer").play();
+    }
 }
 document.querySelector("#pause").addEventListener("click", togglePause);
 
@@ -82,8 +87,9 @@ function movePaddle(e) {
 document.addEventListener("mousemove", movePaddle, false);
 document.addEventListener("touchmove", movePaddle, false);
 
+
 function drawRaven () {
-  let image = dx >= 0 ? ravenRight : ravenLeft;
+  let image = dx >= 0 ? chuckyKoontz : pjp;
   ctx.drawImage(image, x - 38, y - 12)
 }
 
