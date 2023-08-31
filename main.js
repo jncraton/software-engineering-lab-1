@@ -23,7 +23,7 @@ function loadImage (src) {
   return img
 }
 
-const ravenRight = loadImage('media/pjp2_19.jpg')
+const ravenRight = loadImage('media/')
 
 function togglePause () {
   paused = !paused
