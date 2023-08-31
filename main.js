@@ -43,8 +43,8 @@ document.querySelector("#step").addEventListener("click", () => {
     console.log(`x: ${x}\ndx: ${dx}\ny: ${y}\ndy: ${dy}`);
 });
 
-function restart() {
-    const difficulty = document.querySelector("input[name=difficulty]").value;
+function restart () {
+  const difficulty = document.querySelector('input[name=difficulty]').value
 
     x = canvas.width / 2;
     y = canvas.height - 30;
@@ -171,5 +171,5 @@ function draw() {
     }
 }
 
-restart();
-togglePause();
+restart()
+togglePause()
