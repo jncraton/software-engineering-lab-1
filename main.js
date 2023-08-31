@@ -156,4 +156,3 @@ function draw () {
 }
 
 restart()
-togglePause()
