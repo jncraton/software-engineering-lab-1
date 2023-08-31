@@ -24,8 +24,9 @@ function loadImage(src) {
     return img;
 }
 
-const ravenRight = loadImage("media/raven-right.png");
-const ravenLeft = loadImage("media/pjp2_19.jpg");
+const chuckRight = loadImage('media/chuck.jpeg')
+const ravenLeft = loadImage('media/pjp2_19.jpg')
+
 
 function togglePause() {
     paused = !paused;
@@ -81,9 +82,10 @@ function movePaddle(e) {
 document.addEventListener("mousemove", movePaddle, false);
 document.addEventListener("touchmove", movePaddle, false);
 
-function drawRaven() {
-    let image = dx >= 0 ? ravenRight : ravenLeft;
-    ctx.drawImage(image, x - 38, y - 12);
+
+function drawRaven () {
+  let image = dx >= 0 ? chuckRight : ravenLeft;
+  ctx.drawImage(image, x - 38, y - 12)
 }
 
 function drawPaddle() {
