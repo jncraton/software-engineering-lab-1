@@ -5,3 +5,4 @@ Contributors
 - Caleb Burke
 - Skylar Smith
 - Mason Wallace
+- Marcus Shaffer
