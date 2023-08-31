@@ -1,22 +1,21 @@
-let x, y, dx, dy, paddleX
-const canvas = document.getElementById('myCanvas')
-const ctx = canvas.getContext('2d')
-const ravenHitbox = 12
-const paddleHeight = 10
-const paddleWidth = 75
-const brickRowCount = 8
-const brickColumnCount = 6
-const brickWidth = 5
-const brickHeight = 20
-const brickPadding = 10
-const brickOffsetTop = 30
-const brickOffsetLeft = 20
-const color = '#f57920'
-let ravensHarmed = 0
-let ravensFreed = 0
-let paused = true
-const bricks = []
-
+let x, y, dx, dy, paddleX;
+const canvas = document.getElementById("myCanvas");
+const ctx = canvas.getContext("2d");
+const ravenHitbox = 12;
+const paddleHeight = 10;
+const paddleWidth = 75;
+const brickRowCount = 8;
+const brickColumnCount = 6;
+const brickWidth = 5;
+const brickHeight = 20;
+const brickPadding = 10;
+const brickOffsetTop = 30;
+const brickOffsetLeft = 20;
+const color = "#FFC0CB";
+let ravensHarmed = 0;
+let ravensFreed = 0;
+let paused = true;
+const bricks = [];
 
 function loadImage(src) {
     const img = new window.Image();
@@ -24,8 +23,8 @@ function loadImage(src) {
     return img;
 }
 
-const ravenRight = loadImage('media/raven-right.png')
-const ravenLeft = loadImage('media/pjp2_19.jpg')
+const ravenRight = loadImage("media/raven-right.png");
+const ravenLeft = loadImage("media/pjp2_19.jpg");
 
 function togglePause() {
     paused = !paused;
@@ -43,8 +42,8 @@ document.querySelector("#step").addEventListener("click", () => {
     console.log(`x: ${x}\ndx: ${dx}\ny: ${y}\ndy: ${dy}`);
 });
 
-function restart () {
-  const difficulty = document.querySelector('input[name=difficulty]').value
+function restart() {
+    const difficulty = document.querySelector("input[name=difficulty]").value;
 
     x = canvas.width / 2;
     y = canvas.height - 30;
@@ -81,9 +80,9 @@ function movePaddle(e) {
 document.addEventListener("mousemove", movePaddle, false);
 document.addEventListener("touchmove", movePaddle, false);
 
-function drawRaven () {
-  let image = dx >= 0 ? ravenRight : ravenLeft;
-  ctx.drawImage(image, x - 38, y - 12)
+function drawRaven() {
+    let image = dx >= 0 ? ravenRight : ravenLeft;
+    ctx.drawImage(image, x - 38, y - 12);
 }
 
 function drawPaddle() {
@@ -171,5 +170,5 @@ function draw() {
     }
 }
 
-restart()
-togglePause()
+restart();
+togglePause();
