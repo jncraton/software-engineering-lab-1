@@ -6,7 +6,7 @@ const paddleHeight = 10
 const paddleWidth = 75
 const brickRowCount = 8
 const brickColumnCount = 6
-const brickWidth = 5
+const brickWidth = 46
 const brickHeight = 20
 const brickPadding = 10
 const brickOffsetTop = 30
@@ -14,6 +14,7 @@ const brickOffsetLeft = 20
 const color = '#f57920'
 let ravensHarmed = 0
 let ravensFreed = 0
+let ravenScore = 0
 let paused = true
 const bricks = []
 
@@ -24,7 +25,7 @@ function loadImage(src) {
     return img;
 }
 
-const chuckRight = loadImage('media/chuck.jpeg')
+const chuckyKoontz = loadImage('/media\/.jpeg')
 const ravenLeft = loadImage('media/pjp2_19.jpg')
 
 
@@ -44,8 +45,8 @@ document.querySelector("#step").addEventListener("click", () => {
     console.log(`x: ${x}\ndx: ${dx}\ny: ${y}\ndy: ${dy}`);
 });
 
-function restart() {
-    const difficulty = document.querySelector("input[name=difficulty]").value;
+function restart () {
+  const difficulty = document.querySelector('input[name=difficulty]').value
 
     x = canvas.width / 2;
     y = canvas.height - 30;
@@ -84,7 +85,7 @@ document.addEventListener("touchmove", movePaddle, false);
 
 
 function drawRaven () {
-  let image = dx >= 0 ? chuckRight : ravenLeft;
+  let image = dx >= 0 ? chuckyKoontz : ravenLeft;
   ctx.drawImage(image, x - 38, y - 12)
 }
 
@@ -174,4 +175,3 @@ function draw() {
 }
 
 restart()
-togglePause()
