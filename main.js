@@ -6,7 +6,7 @@ const paddleHeight = 10
 const paddleWidth = 75
 const brickRowCount = 8
 const brickColumnCount = 6
-const brickWidth = 5
+const brickWidth = 46
 const brickHeight = 20
 const brickPadding = 10
 const brickOffsetTop = 30
@@ -14,6 +14,7 @@ const brickOffsetLeft = 20
 const color = '#f57920'
 let ravensHarmed = 0
 let ravensFreed = 0
+let ravenScore = 0
 let paused = true
 const bricks = []
 
@@ -172,4 +173,3 @@ function draw() {
 }
 
 restart()
-togglePause()
