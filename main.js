@@ -28,6 +28,7 @@ function loadImage(src) {
 
 const chuckyKoontz = loadImage('media/chuck.jpeg')
 const pjp = loadImage('media/pjp2_19.jpg')
+const helios = loadImage('media/Helios.jpg')
 
 function togglePause() {
     paused = !paused;
@@ -97,7 +98,7 @@ function drawRaven () {
 function drawPaddle() {
     ctx.beginPath();
     ctx.rect(paddleX, canvas.height - paddleHeight, paddleWidth, paddleHeight);
-    ctx.fillStyle = color;
+    ctx.fillStyle = "#3CDFFF";
     ctx.fill();
     ctx.closePath();
 }
