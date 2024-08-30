@@ -28,6 +28,7 @@ const ravenLeft = loadImage('media/raven-left.png')
 
 function togglePause () {
   paused = !paused
+  window.alert("GAME PAUSED!!!")
   document.querySelector('#pause').innerHTML = paused ? 'Resume' : 'Pause'
   document.querySelector('#step').style.display = paused ? 'inline' : 'none'
   draw()
