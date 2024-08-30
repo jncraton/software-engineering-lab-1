@@ -1,22 +1,22 @@
-let x, y, dx, dy, paddleX;
-const canvas = document.getElementById("myCanvas");
-const ctx = canvas.getContext("2d");
-const ravenHitbox = 20;
-const paddleHeight = 10;
-let paddleWidth = 150;
-const brickRowCount = 8;
-const brickColumnCount = 6;
-const brickWidth = 46;
-const brickHeight = 20;
-const brickPadding = 10;
-const brickOffsetTop = 30;
-const brickOffsetLeft = 20;
-const color = "#141414";
-let ravensHarmed = 0;
-let ravensFreed = 0;
-let paused = true;
-const bricks = [];
-let bricksCount = 0;
+let x, y, dx, dy, paddleX
+const canvas = document.getElementById('myCanvas')
+const ctx = canvas.getContext('2d')
+const ravenHitbox = 20
+const paddleHeight = 10
+let paddleWidth = 150
+const brickRowCount = 8
+const brickColumnCount = 10
+const brickWidth = 46
+const brickHeight = 20
+const brickPadding = 10
+const brickOffsetTop = 30
+const brickOffsetLeft = 20
+const color = '#141414'
+let ravensHarmed = 0
+let ravensFreed = 0
+let paused = true
+const bricks = []
+let bricksCount = 0
 
 function loadImage(src) {
     const img = new window.Image();
@@ -27,11 +27,12 @@ function loadImage(src) {
 const ravenRight = loadImage("media/raven-right.png");
 const ravenLeft = loadImage("media/raven-left.png");
 
-function togglePause() {
-    paused = !paused;
-    document.querySelector("#pause").innerHTML = paused ? "Resume" : "Pause";
-    document.querySelector("#step").style.display = paused ? "inline" : "none";
-    draw();
+function togglePause () {
+  paused = !paused
+  window.alert("GAME PAUSED!!!")
+  document.querySelector('#pause').innerHTML = paused ? 'Resume' : 'Pause'
+  document.querySelector('#step').style.display = paused ? 'inline' : 'none'
+  draw()
 }
 document.querySelector("#pause").addEventListener("click", togglePause);
 
