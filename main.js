@@ -1,8 +1,8 @@
 let x, y, dx, dy, paddleX
 const canvas = document.getElementById('myCanvas')
 const ctx = canvas.getContext('2d')
-const ravenHitbox = 12
-const paddleHeight = 10
+const ravenHitbox = 20
+const paddleHeight = 100
 const paddleWidth = 75
 const brickRowCount = 8
 const brickColumnCount = 6
