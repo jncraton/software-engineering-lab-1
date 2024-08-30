@@ -2,6 +2,7 @@ Contributors
 ============
 
 - Jon Craton
+- Jordan Bossman
 - Darth Vader
 - Ethan Poorbaugh
 - Dylan Lemon
