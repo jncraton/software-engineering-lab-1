@@ -8,3 +8,5 @@ Contributors
 - Tai Van Dam
 - Peyton Luhring
 - Andrew Geiger
+- Jaden Ickes
+- Owen Mockabee
