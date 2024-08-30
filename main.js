@@ -3,7 +3,7 @@ const canvas = document.getElementById('myCanvas')
 const ctx = canvas.getContext('2d')
 const ravenHitbox = 20
 const paddleHeight = 10
-const paddleWidth = 150
+let paddleWidth = 150
 const brickRowCount = 8
 const brickColumnCount = 6
 const brickWidth = 46
@@ -43,6 +43,7 @@ document.querySelector('#step').addEventListener('click', () => {
 function restart () {
   const difficulty = document.querySelector('input[name=difficulty]').value
 
+  paddleWidth = 150
   x = canvas.width / 2
   y = canvas.height - 30
   paddleX = (canvas.width - paddleWidth) / 2
@@ -146,6 +147,7 @@ function draw () {
   } else if (y > canvas.height - ravenHitbox && y < canvas.height + ravenHitbox &&
             x > paddleX && x < paddleX + paddleWidth && dy > 0) {
     dy = -dy
+    paddleWidth -= 5
   }
 
   x += dx
