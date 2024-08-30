@@ -160,7 +160,6 @@ function draw () {
 
   if (!paused) {
     window.requestAnimationFrame(draw)
-    window.alert("Thank you for Pausing!")
   }
 }
 
