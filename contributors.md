@@ -6,3 +6,4 @@ Contributors
 - Ethan Poorbaugh
 - Dylan Lemon
 - Tai Van Dam
+- Peyton Luhring
