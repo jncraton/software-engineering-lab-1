@@ -35,5 +35,5 @@ If you run into merge conflicts, feel free to attempt to resolve them. If you ge
 - `commit` your change. You may use multiple commits and/or branches if desired, but a single commit is fine for this project.
 - Test your change locally. We do not want to push a broken game to others.
 - `push` your working change to Github.
-- Observe that your change is reflected in the [deployed version of the game](jncraton.github.io/software-engineering-lab-1) after a minute or so.
+- Observe that your change is reflected in the [deployed version of the game](https://jncraton.github.io/software-engineering-lab-1) after a minute or so.
 
