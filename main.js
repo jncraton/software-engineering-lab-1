@@ -24,6 +24,7 @@ function loadImage (src) {
 }
 
 const ravenRight = loadImage('media/raven-right.png')
+const ravenLeft = loadImage('media/raven-left.png')
 
 function togglePause () {
   paused = !paused
@@ -76,8 +77,13 @@ document.addEventListener('mousemove', movePaddle, false)
 document.addEventListener('touchmove', movePaddle, false)
 
 function drawRaven () {
-  ctx.drawImage(ravenRight, x - 38, y - 12)
-}
+  if(dx>=0) {
+    ctx.drawImage(ravenRight, x - 38, y - 12)
+    }
+  else {
+    ctx.drawImage(ravenLeft, x - 38, y - 12)
+    }
+  }
 
 function drawPaddle () {
   ctx.beginPath()
