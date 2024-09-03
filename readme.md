@@ -1,6 +1,8 @@
 Software Engineering Lab 1
 ==========================
 
+Hello world
+
 This lab gives you the opportunity to use basic `git` commands in a collaborative environment. If Git is a little rusty for you, I recommend using the [Git book](https://git-scm.com/book/en/v2) for reference.
 
 Tasks
