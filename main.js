@@ -134,7 +134,7 @@ function drawBricks() {
 
 function drawScore() {
     document.querySelector("#score").textContent =
-      "Trojans Freed: " + ravensFreed + " Trojans Harmed: " + ravensHarmed + " Bricks Destroyed: " + bricksCount;
+      "Trojans Freed: " + ravensFreed + " Trojans Harmed: " + ravensHarmed + " Bricks Destroyed: " + bricksCount + " Powerups: " + powerups.length + "ANDERSON >>>";
 }
 
 function drawPowerups () {
