@@ -14,7 +14,7 @@ const brickOffsetLeft = 20
 const powerupHitbox = 8
 const powerupColor = '#7700ff'
 const powerupProbability = 0.33
-const color = '#141414'
+const color = '#800080'
 let ravensHarmed = 0
 let ravensFreed = 0
 let paused = true
@@ -29,8 +29,8 @@ function loadImage(src) {
     return img;
 }
 
-const ravenRight = loadImage("media/raven-right.png");
-const ravenLeft = loadImage("media/raven-left.png");
+const ravenRight = loadImage("media/trojan_right.jpg");
+const ravenLeft = loadImage("media/trojan_left.jpg");
 
 function togglePause () {
   paused = !paused
@@ -134,7 +134,7 @@ function drawBricks() {
 
 function drawScore() {
     document.querySelector("#score").textContent =
-      "Ravens Freed: " + ravensFreed + " Ravens Harmed: " + ravensHarmed + " Bricks Destroyed: " + bricksCount;
+      "Trojans Freed: " + ravensFreed + " Trojans Harmed: " + ravensHarmed + " Bricks Destroyed: " + bricksCount;
 }
 
 function drawPowerups () {
