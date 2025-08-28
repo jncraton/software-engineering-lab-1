@@ -10,9 +10,11 @@ Tasks
 
 If you've not used your Github account to push code, you may not have an SSH key configured. [Check for existing SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys), and [generate](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and [add](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) them if needed.
 
-### `clone` this repository. 
+### `clone` this repository
 
-```
+A `clone` is a local copy of a complete git repository. The following command will `clone` this repository:
+
+```sh
 git clone git@github.com:jncraton/software-engineering-lab-1.git
 ```
 
@@ -30,7 +32,7 @@ You have now added a new change to your local history of changes in your local r
 
 Note that when working collaboratively nearly all teams will avoid using the `main` branch in this way. We will use branches and pull requests in our next lab.
 
-If you run into merge conflicts, feel free to attempt to resolve them. If you get stuck, we can talk more about how to get unstuck in class.
+If you run into merge conflicts, feel free to attempt to resolve them. If you get stuck, ask a peer or the instructor about how to get unstuck.
 
 ### Modify the application
 
@@ -40,4 +42,3 @@ If you run into merge conflicts, feel free to attempt to resolve them. If you ge
 - Test your change locally. We do not want to push a broken game to others.
 - `push` your working change to Github.
 - Observe that your change is reflected in the [deployed version of the game](https://jncraton.github.io/software-engineering-lab-1) after a minute or so.
-
