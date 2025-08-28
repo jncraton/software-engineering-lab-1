@@ -6,6 +6,10 @@ This lab gives you the opportunity to use basic `git` commands in a collaborativ
 Tasks
 -----
 
+### Confirm SSH Keys
+
+If you've not used your Github account to push code, you may not have an SSH key configured. [Check for existing SSH keys](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/checking-for-existing-ssh-keys), and [generate](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) and [add](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/adding-a-new-ssh-key-to-your-github-account) them if needed.
+
 ### `clone` this repository. 
 
 ```
