@@ -58,11 +58,11 @@ nav a {
 header {
   background:rgba(51,51,51,0.6);
   height: 140px;
-  border-bottom: 1px solid #f57920;
+  border-bottom: 1px solid #ff6a00;
 }
 
 nav {
-  background-color:#000;
+  background-color:#faf9f9;
   text-align: right;
 }
 
