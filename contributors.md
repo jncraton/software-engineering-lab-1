@@ -7,3 +7,4 @@ Contributors
 - Nick Pavey
 - Jakob Surgeon
 - Caroline DeRolf
+- Sarvar Muzaffarov
