@@ -6,3 +6,4 @@ Contributors
 - Asher McKenna
 - Nick Pavey
 - Jakob Surgeon
+- Caroline DeRolf
