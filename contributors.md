@@ -5,3 +5,4 @@ Contributors
 - Jillian Crawford
 - Asher McKenna
 - Nick Pavey
+- Jakob Surgeon
