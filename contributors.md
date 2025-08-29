@@ -26,3 +26,4 @@ Contributors
 - Jakob Surgeon
 - Caroline DeRolf
 - Sarvar Muzaffarov
+- Emmanuel Garang
