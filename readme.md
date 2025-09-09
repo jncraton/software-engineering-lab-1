@@ -24,7 +24,7 @@ You now have a local copy of this Git repository. This includes not just the cur
 
 Modify the contributors.md file locally to add yourself to the list of contributors. 
 
-`commit` this change using a [good commit message](https://archive.ph/zE4lu).
+`commit` this change using a [good commit message](https://archive.is/zE4lu).
 
 You have now added a new change to your local history of changes in your local repository. You can confirm this by running `git log`. You can also view your change by running `git diff HEAD~1` to show the difference between the head of the current branch and the previous commit.
 
